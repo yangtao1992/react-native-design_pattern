@@ -7,6 +7,11 @@ export default class BaseApp extends React.Component{
 
     componentDidMount() {
         mPresenter = this.getPresenter();
+		this.loadData();
+    }
+	
+	//加载数据
+    loadData(){
     }
 
     getUserToken(){

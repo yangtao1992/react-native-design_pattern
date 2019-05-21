@@ -15,6 +15,11 @@ export default class TestScreen extends BaseApp{
 		mPresenter = TestPresenter.getInstance(this);
         return mPresenter;
     }
+	
+	loadData() {
+        super.loadData();
+        this.getBookOrderList();
+    }
 
     getBookOrderList(){
         let params = {};//请求参数
